@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>1kgCHAT</title>
+</head>
+
+<body>
+    <div class="blur"></div>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="logo">
+                <img src="images/logo(black).png" alt="logo">
+            </div>
+            <div class="form">
+                <h2>Join 1kg of spicy CHATS.</h2>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen">
+            <div class="header">
+                <img src="images/logo(white).png" alt="logo">
+                <div class="logo">Chatroom</div>
+                <button id="exit-chat">Exit</button>
+            </div>
+            <div class="messages">
+            </div>
+            <div class="textbox">
+                <input type="text" id="message-input">
+                <button id="send-message">Send </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
